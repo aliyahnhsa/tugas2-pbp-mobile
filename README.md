@@ -23,3 +23,24 @@ A new Flutter project.
 
 5. **Implementasi Checklist**:  
    Untuk implementasi checklist di atas, saya menambahkan widget sesuai fungsi masing-masing, misalnya `AppBar` untuk header, `Card` dan `GridView.builder` untuk layout grid, dan menggunakan `setState()` saat ingin memperbarui tampilan berdasarkan interaksi pengguna.
+
+## Tugas Individu 8
+Tentu, berikut adalah jawaban dengan gaya yang lebih ringkas dan sopan:
+
+1. **Kegunaan `const` di Flutter**:  
+   `const` digunakan untuk mendeklarasikan nilai yang tidak berubah sepanjang aplikasi berjalan. Keuntungannya adalah peningkatan performa karena objek `const` diinisialisasi sekali dan dapat digunakan berulang kali. Sebaiknya gunakan `const` pada widget statis, sementara pada data yang bersifat dinamis jangan digunakan.
+
+2. **Penggunaan `Column` dan `Row` di Flutter**:  
+   `Column` menyusun widget secara vertikal, cocok untuk tempat letak seperti daftar atau formulir. Sementara itu, `Row` menyusun widget secara horizontal dan sesuai untuk baris ikon atau teks. Keduanya memungkinkan pengaturan alignment sesuai kebutuhan tempat letak.
+
+3. **Elemen Input pada Halaman Form**:  
+   Pada halaman form yang saya buat kali ini, elemen input yang digunakan adalah:
+      a. TextFormField untuk input Game: Digunakan untuk memasukkan nama game. Memiliki validasi agar tidak kosong.
+      b. TextFormField untuk input Price: Digunakan untuk memasukkan harga game. Memiliki validasi agar hanya menerima angka.
+      c. TextFormField untuk input Description: Digunakan untuk memasukkan deskripsi game. Juga memiliki validasi agar tidak kosong.
+
+4. **Mengatur Tema (Theme) dalam Aplikasi Flutter**:  
+   Tema diatur dengan `ThemeData` pada `MaterialApp` untuk menciptakan tampilan yang konsisten dalam aplikasi. Tema ini memungkinkan kontrol penuh atas warna, font, dan style di seluruh aplikasi. Tema dasar telah diterapkan dalam proyek ini.
+
+5. **Menangani Navigasi dalam Aplikasi Flutter**:  
+   Navigasi antarhalaman diatur menggunakan `Navigator` dan `MaterialPageRoute`. `Navigator.push` digunakan untuk membuka halaman baru, sedangkan `Navigator.pop` untuk kembali. Metode ini memastikan alur navigasi berjalan dengan baik pada aplikasi yang memiliki banyak halaman.

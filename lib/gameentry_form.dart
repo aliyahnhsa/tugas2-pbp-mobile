@@ -125,7 +125,7 @@ class _GameEntryFormPageState extends State<GameEntryFormPage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text('Game: $_Game'),
+                                  Text('Game: $_game'),
                                   // TODO: Munculkan value-value lainnya
                                 ],
                               ),
