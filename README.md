@@ -25,8 +25,6 @@ A new Flutter project.
    Untuk implementasi checklist di atas, saya menambahkan widget sesuai fungsi masing-masing, misalnya `AppBar` untuk header, `Card` dan `GridView.builder` untuk layout grid, dan menggunakan `setState()` saat ingin memperbarui tampilan berdasarkan interaksi pengguna.
 
 ## Tugas Individu 8
-Tentu, berikut adalah jawaban dengan gaya yang lebih ringkas dan sopan:
-
 1. **Kegunaan `const` di Flutter**:  
    `const` digunakan untuk mendeklarasikan nilai yang tidak berubah sepanjang aplikasi berjalan. Keuntungannya adalah peningkatan performa karena objek `const` diinisialisasi sekali dan dapat digunakan berulang kali. Sebaiknya gunakan `const` pada widget statis, sementara pada data yang bersifat dinamis jangan digunakan.
 

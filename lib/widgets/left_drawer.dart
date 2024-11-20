@@ -45,14 +45,14 @@ class LeftDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.games),
-            title: const Text('Tambah Game'),
-            // Bagian redirection ke GameEntryFormPage
+            leading: const Icon(Icons.add_reaction_rounded),
+            title: const Text('Daftar Mood'),
             onTap: () {
-              /*
-                TODO: Buatlah routing ke GameEntryFormPage di sini,
-                setelah halaman GameEntryFormPage sudah dibuat.
-                */
+              // Route menu ke halaman mood
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const GameEntryPage()),
+              );
             },
           ),
         ],
