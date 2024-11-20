@@ -42,3 +42,26 @@ A new Flutter project.
 
 5. **Menangani Navigasi dalam Aplikasi Flutter**:  
    Navigasi antarhalaman diatur menggunakan `Navigator` dan `MaterialPageRoute`. `Navigator.push` digunakan untuk membuka halaman baru, sedangkan `Navigator.pop` untuk kembali. Metode ini memastikan alur navigasi berjalan dengan baik pada aplikasi yang memiliki banyak halaman.
+
+## Tugas Individu 9
+1. **Mengapa perlu model untuk JSON?**  
+   Model diperlukan untuk mempermudah konversi data JSON menjadi objek Dart, sehingga data dapat diolah lebih efisien. Jika tidak membuat model, aplikasi tetap bisa berfungsi, tetapi penanganan data menjadi lebih sulit, rawan error, dan kurang terstruktur.
+
+2. **Fungsi library `http`**  
+   Library `http` digunakan untuk melakukan komunikasi antara aplikasi Flutter dengan server, seperti pengambilan data menggunakan GET atau pengiriman data menggunakan POST. Library ini membantu menangani permintaan HTTP dengan mudah.
+
+3. **Fungsi dan pentingnya `CookieRequest`**  
+   `CookieRequest` digunakan untuk menangani sesi pengguna dengan menyimpan cookie. Instance-nya dibagikan ke seluruh komponen agar data sesi tetap konsisten di semua halaman, memungkinkan pengguna tetap login tanpa perlu autentikasi ulang.
+
+4. **Mekanisme pengiriman data**  
+   Data yang diinput pengguna dikirim melalui permintaan HTTP (biasanya POST) ke server. Server memproses data, menyimpan ke basis data, lalu merespons dengan data baru yang dikirim kembali ke aplikasi untuk ditampilkan.
+
+5. **Mekanisme autentikasi**  
+   Pada login, data pengguna dikirim dari Flutter ke Django menggunakan POST. Django memverifikasi data, lalu mengembalikan token atau cookie sesi jika valid. Pada register, data pengguna baru dikirim, disimpan di basis data, lalu pengguna diarahkan ke halaman login. Saat logout, sesi pengguna dihapus, baik di Flutter maupun Django.
+
+6. **Implementasi checklist secara step-by-step**  
+   - Membuat model untuk memetakan data JSON ke objek Dart.  
+   - Menggunakan library `http` untuk mengirim atau menerima data dari API Django.  
+   - Mengatur instance `CookieRequest` untuk manajemen sesi.  
+   - Menambahkan logika login, register, dan logout dengan endpoint API.  
+   - Membuat halaman untuk input dan menampilkan data dengan menghubungkannya ke fungsi-fungsi API.  
